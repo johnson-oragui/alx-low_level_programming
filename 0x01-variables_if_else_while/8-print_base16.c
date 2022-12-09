@@ -10,10 +10,18 @@ int main(void)
 {
 	int i = 0;
 
-	while ( i < 16 )
+	char j = 'a';
+
+	while (i < 10)
 	{
 		putchar(i);
 		i++;
+	}
+
+	while (j < 'g')
+	{
+		putchar(j);
+		j++;
 	}
 		putchar('\n');
 	return (0);
