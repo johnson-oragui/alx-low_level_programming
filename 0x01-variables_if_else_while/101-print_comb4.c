@@ -14,18 +14,19 @@ int main(void)
 
 	for (i = 0; i < 8; i++)
 	{
+		putchar(i + '0');
+
 		for (j = 0; j < 9; j++)
 		{
+			putchar(j + '0');
+
 			for (k = 0; k < 10; k++)
 			{
-				digit[0] = i + '0';
-				digit[1] = j + '0';
-				digit[2] = k + '0';
-				digit[3] = '\0';
-
-				printf("%d \n", digit);
+				putchar(k + '0');
 			}
 		}
 	}
+
+	putchar('\n');
 	return (0);
 }
