@@ -23,7 +23,7 @@ int main(void)
 				digit[2] = k + '0';
 				digit[3] = '\0';
 
-				putchar(digit);
+				printf("%d \n", digit);
 			}
 		}
 	}
