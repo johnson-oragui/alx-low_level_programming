@@ -8,25 +8,34 @@
 
 int main(void)
 {
-	int digit[4];
+	int c, d, e = 0;
 
-	int i, j, k;
-
-	for (i = 0; i < 8; i++)
+	while (e < 10)
 	{
-		putchar(i + '0');
-
-		for (j = 0; j < 9; j++)
+		d = 0;
+		while (d < 10)
 		{
-			putchar(j + '0');
-
-			for (k = 0; k < 10; k++)
+			c = 0;
+			while (c < 10)
 			{
-				putchar(k + '0');
-			}
-		}
-	}
+				if (c != d && d != e && e < d && d < c)
+				{
+					putchar('0' + e);
+					putchar('0' + d);
+					putchar('0' + c);
 
+					if (c + d + e != 9 + 8 + 7)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+				c++;
+			}
+			d++;
+		}
+		e++;
+	}
 	putchar('\n');
 	return (0);
 }
