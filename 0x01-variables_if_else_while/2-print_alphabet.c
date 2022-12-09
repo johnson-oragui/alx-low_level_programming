@@ -8,16 +8,12 @@
 
 int main(void)
 {
-	char c;
-
-	c = 'a';
-
-	while (c <= 'z')
+	for (x = 'A' ; x <= 'Z' ; x++)
 	{
-		putchar(c);
-		c++;
+		int lower_x = tolower(x);
+
+		putchar(lower_x);
 	}
-	putchar("\n");
 
 
 	return (0);
