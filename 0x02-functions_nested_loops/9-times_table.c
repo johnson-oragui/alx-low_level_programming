@@ -5,7 +5,7 @@
  */
 void times_table(void)
 {
-	int num, mult, product;
+	int num, multi, product;
 
 	for (num = 0; num <= 9; num++)
 	{
@@ -22,7 +22,7 @@ void times_table(void)
 				_putchar(' ');
 			else
 				_putchar((product / 10) + '0');
-			_putchar((prroduct % 10) + '0');
+			_putchar((product % 10) + '0');
 		}
 		_putchar('\n');
 	}
