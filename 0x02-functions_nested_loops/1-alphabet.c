@@ -1,14 +1,8 @@
 #include "main.h"
 
 /**
- * Main - Void print_alphabet
- *
- * Description - Prints alphabet in lower case
- *
- * Return: No return
+ * print_alphabet - print_alphabet
  */
-
-/*prints alphabet in lower case*/
 void print_alphabet(void)
 {
 	char a;
