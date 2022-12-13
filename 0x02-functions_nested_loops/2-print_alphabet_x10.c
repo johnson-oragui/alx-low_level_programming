@@ -1,13 +1,8 @@
 #include "main.h"
 
 /**
- * Description - prints 10 times the alphabet
- * in lowercase, followed by a new line.
- *
- * Return: void (success)
- *
+ * print_alphabet_x10 - prints alpha 10 times
  */
-
 void print_alphabet_x10(void)
 {
 	int i;
