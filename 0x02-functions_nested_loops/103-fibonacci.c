@@ -32,8 +32,8 @@ int main(void)
 		{
 			break;
 		}
-		printf("%d, ", j);
 	}
+	printf("%d\n", j);
 
 	return (0);
 }
