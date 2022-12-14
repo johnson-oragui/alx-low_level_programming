@@ -26,7 +26,7 @@ int main(void)
 
 		if (num3 % 2 == 0)
 		{
-			j += sum3;
+			j += num3;
 		}
 		if (j >= 4000000)
 		{
