@@ -33,7 +33,7 @@ int main(void)
 			break;
 		}
 	}
-	printf("%d\n", j);
+	printf("%d\n", j + 2);
 
 	return (0);
 }
