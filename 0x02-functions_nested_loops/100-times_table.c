@@ -19,6 +19,10 @@ void print_times_table(int n)
 
 		for (multi = 0; multi <= n; multi++)
 		{
+			if (multi == 0)
+			{
+				continue;
+			}
 			_putchar(',');
 			_putchar(' ');
 
