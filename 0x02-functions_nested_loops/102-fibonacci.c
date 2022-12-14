@@ -17,10 +17,11 @@ int main(void)
 
 	printf("%lu, %lu, ", num1, num2);
 
-	for (i = 0; i <= 48; i++)
+	for (i = 0; i <= 47; i++)
 	{
 		num3 = num1 + num2;
-		printf("%lu, ", num3);
+		if (num3 < 20365011074)
+			printf("%lu, ", num3);
 		num1 = num2;
 		num2 = num3;
 	}
