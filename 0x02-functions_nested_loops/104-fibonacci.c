@@ -43,6 +43,6 @@ int main(void)
 		if (i != 97)
 			printf(", ");
 	}
-	print("\n");
+	printf("\n");
 	return (0);
 }
