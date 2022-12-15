@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include <limits.h>
 
 /**
  * main - entry point
@@ -9,20 +12,20 @@
 
 int main(void)
 {
-	unsigned long long num1 = 1;
-	unsigned long long num2 = 2;
-	unsigned long long num3;
+	unsigned long int num1 = 1;
+	unsigned long int num2 = 2;
+	unsigned long int num3;
 	int i;
 
-	printf("%llu, %llu, ", num1, num2);
+	printf("%lu, %lu, ", num1, num2);
 
-	for (i = 0; i < 90; i++)
+	for (i = 0; i < 96; i++)
 	{
 		num3 = num1 + num2;
 		num1 = num2;
 		num2 = num3;
 
-		printf("%llu, ", num3);
+		printf("%lu, ", num3);
 	}
 	printf("\n");
 
