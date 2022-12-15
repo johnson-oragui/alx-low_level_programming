@@ -9,12 +9,12 @@
 
 int main(void)
 {
-	unsigned long int num1 = 1;
-	unsigned long int num2 = 2;
-	unsigned long int num3;
+	unsigned long long num1 = 1;
+	unsigned long long num2 = 2;
+	unsigned long long num3;
 	int i;
 
-	printf("%lu, %lu, ", num1, num2);
+	printf("%llu, %llu, ", num1, num2);
 
 	for (i = 0; i < 90; i++)
 	{
@@ -22,9 +22,8 @@ int main(void)
 		num1 = num2;
 		num2 = num3;
 
-		printf("%lu, ", num3);
+		printf("%llu, ", num3);
 	}
-	printf("19740274219868223167, 31940434634990099905, 51680708854858323072, 83621143489848422977, 135301852344706746049, 218922995834555169026");
 	printf("\n");
 
 	return (0);
