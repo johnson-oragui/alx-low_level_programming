@@ -14,9 +14,12 @@ int main(void)
 	unsigned long int ab2 = 0;
 	unsigned long int xy1 = 1;
 	unsigned long int xy2 = 2;
+	unsigned long int num1;
+	unsigned long int num2;
+	unsigned long int num3;
 	int i;
 
-	printf("%lu, %lu, "), xy1, xy2;
+	printf("%lu, %lu, ", xy1, xy2);
 	for (i = 2; i < 98; i++)
 	{
 		if (xy1 + xy2 > LARGEST || ab2 > 0 || ab1 > 0)
