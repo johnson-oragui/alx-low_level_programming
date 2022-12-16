@@ -10,9 +10,9 @@
  */
 void print_number(int n)
 {
-	long p;
+	int p;
 	int i;
-	long num;
+	int num;
 
 	num = n;
 
