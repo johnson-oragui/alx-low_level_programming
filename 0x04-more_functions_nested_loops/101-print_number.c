@@ -19,7 +19,7 @@ void print_number(int n)
 	if (num < 0)
 	{
 		num *= -1;
-		_putchar(' ');
+		_putchar('-');
 	}
 
 	p = 1;
