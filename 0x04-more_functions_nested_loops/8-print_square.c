@@ -11,18 +11,17 @@ void print_square(int size)
 {
 	int i, j;
 
-	if (i < 1)
+	j = 0;
+	if (size < 1)
 		_putchar('\n');
 
-	i = 0;
-
-	while (i < size)
+	while (j < size)
 	{
-		j = 0;
-		while (j < size)
+		i = 0;
+		while (i < size)
 		{
-			_putchar(#);
-			j++;
+			_putchar('#');
+			i++;
 		}
 		_putchar('\n');
 		j++;
