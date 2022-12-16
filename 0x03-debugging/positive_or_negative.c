@@ -1,15 +1,10 @@
 #include "main.h"
 
 /**
-
  * positive_or_negative - prints number
-
  * Description: Get a random number and print the number
-
  * and if it is positive, negative, or zero
-
  * @i: number to print
-
  */
 void positive_or_negative(int i)
 {
