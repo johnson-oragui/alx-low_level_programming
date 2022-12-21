@@ -10,10 +10,10 @@ char *cap_string(char *str)
 {
 	int i;
 	int j;
-	int catalyst;
+	int catalyst = 0;
 	char nots[] = ",;.!?(){}\n\t\" ";
 
-	for (i = 0; catalyst = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (str[0] > 96 && str[0] < 123)
 		{
