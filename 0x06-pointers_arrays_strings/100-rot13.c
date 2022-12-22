@@ -6,16 +6,26 @@
  */
 char *rot13(char *s)
 {
-	int i;
-	char alphau[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
-	char alphal[] = "nopqrstuvwxyzabcdefghijklm";
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i] != 0)
 	{
-		if ((s[i] > 64 && s[i] < 91) || (s[i] > 96 && s[i] < 123))
+		if ((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z'))
 		{
-			s[i] = (s[i] - 65 > 25) ?
-				alphal[s[i] - 97] : alphau[s[i] - 65];
+			while ((s[i] >= 'A' && s[i] < 'N') || (s[i] >= 'a' && s[i] < 'n'))
+			{
+				s[i] += 13;
+				i++;
+			}
+			while ((s[i] >= 'N' && s[i] <= 'Z') || (s[i] >= 'n' && s[i] <= 'z'))
+			{
+				s[i] -= 13;
+				i++;
+			}
+		}
+		else
+		{
+			i++;
 		}
 	}
 	return (s);
