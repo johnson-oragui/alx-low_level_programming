@@ -6,25 +6,15 @@
  */
 char *rot13(char *s)
 {
-	int i = 0;
+	int i;
+	char upper[] = "NOPQRSTUVWXYZ";
+	char lower[] = "nopqrstuvwxyz";
 
-	while (s[i] != 0)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z'))
+		while ((s[i] > 65 && s[i] < 9) || (s[i] > 96 && s[i] < 123))
 		{
-			while ((s[i] >= 'A' && s[i] < 'N') || (s[i] >= 'a' && s[i] < 'n'))
-			{
-				s[i] += 13;
-				i++;
-			}
-			while ((s[i] >= 'N' && s[i] <= 'Z') || (s[i] >= 'n' && s[i] <= 'z'))
-			{
-				s[i] -= 13;
-				i++;
-			}
-		}
-		else
-		{
+			s[i] = (s[i] - 65 > 25) ? upper[s[i] - 97] : lower[s[i] - 65];
 			i++;
 		}
 	}
