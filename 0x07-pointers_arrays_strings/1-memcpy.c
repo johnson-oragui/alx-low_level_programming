@@ -4,9 +4,9 @@
 /**
  * *_memcpy - copies n characters from memory area src to memory area dest
  *
- * @dest:
- * @src:
- * @n:
+ * @dest: pointer to destnation array
+ * @src: data to be copied
+ * @n: number of bytes to be copied
  * Return: value of memcpy
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
