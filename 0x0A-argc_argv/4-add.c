@@ -1,32 +1,39 @@
-#include <ctype.h>
-#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 /**
  * main - adds positive numbers
- * @argc: counts arguments
- * @argv: arguments
- * Return: 0 if no number, 1 if number is symbol
+ * @argc: Number of arguments
+ * @argv: Arguments recieved
+ *
+ * Return: 0 on success, 1 if theres a nondigit arg
  */
 int main(int argc, char *argv[])
 {
+	int sum;
+	int count;
 	int i;
-	int to_int;
-	int sum = 0;
 
-	i = 0;
-	while (i < argc)
+	sum = 0;
+
+	if (argc == 1)
 	{
-		if (check_for_int(argv[i]))
+		printf("0\n");
+		return (0);
+	}
+	count = 1;
+	while (count < argc)
+	{
+		for (i = 0; argv[count][i] != '\0'; i++)
 		{
-			to_int = atoi(argv[i]);
-			sum += to_int;
+			if (!(isdigit(argv[count][i])))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (0);
-		}
-		i++;
+		sum += atoi(argv[count]);
+		count++;
 	}
 	printf("%d\n", sum);
 	return (0);
