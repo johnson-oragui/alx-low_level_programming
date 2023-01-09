@@ -1,25 +1,22 @@
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+#include <stdlib.h>
 /**
- * main - prints the multiplication of two int
- * @argc: arguments count
- * @argv: arguments
- * Return: always 0 (success)
+ * main - Multiplies two numbers
+ * @argc: Number of arguments
+ * @argv: Array of arguments recieved
+ *
+ * Return: 0 on success, 1 if arguments is less than two
  */
 int main(int argc, char *argv[])
 {
-	int a;
-	int b;
-
-	if (argc == 1)
+	if (argc == 3)
 	{
-		a = (atoi(argv[1]));
-		b = (atoi(argv[2]));
-		printf("%d\n", a * b);
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 		return (0);
 	}
-
-	printf("Error\n");
-	return (1);
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
 }
