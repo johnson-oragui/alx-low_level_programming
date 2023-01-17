@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * print_dog - Print out all of the struct dog info
+ * init_dog - Print out all of the struct dog info
  * @d: Pointer to struct
  * @name: name of dog
  * @age: age of dog
