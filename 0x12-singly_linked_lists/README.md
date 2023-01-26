@@ -1,0 +1,7 @@
+Singly linked lists in C
+
+data structures
+
+When and why using linked lists vs arrays
+
+How to build and use linked lists
