@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * flip_bits - Find the number of bits needed to flip to change
