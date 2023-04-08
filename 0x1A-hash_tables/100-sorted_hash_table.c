@@ -50,7 +50,7 @@ int shash_table_set(shash_table_t *HT, const char *key, const char *value)
 	char *value_copy;
 	unsigned long int index;
 
-	if (HT == NULL || key == NULL || key == '\0' || value == NULL)
+	if (HT == NULL || key == NULL || value ==NULL || *key == '\0' )
 		return (0);
 
 	value_copy = strdup(value);
@@ -132,7 +132,7 @@ char *shash_table_get(const shash_table_t *HT, const char *key)
 	shash_node_t *node;
 	unsigned long int index;
 
-	if (HT == NULL || key == NULL || key == '\0')
+	if (HT == NULL || key == NULL || *key == '\0')
 		return (NULL);
 
 	index = key_index((const unsigned char *)key, HT->size);
