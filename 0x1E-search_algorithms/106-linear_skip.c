@@ -13,7 +13,7 @@
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
 	skiplist_t *node, *jump;
-	
+
 	/* Check if the list is NULL */
 	if (list == NULL)
 		return (NULL);
@@ -41,9 +41,11 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 		}
 	}
 
-	printf("Value found between indexes [%ld] and [%ld]\n", node->index, jump->index);
+	printf("Value found between indexes [%ld] and [%ld]\n",
+			node->index, jump->index);
 
-	/*  performs a linear search, checking each node's value to find the target value */
+	/*  performs a linear search, checking each */
+	/*  node's value to find the target value */
 	for (; node->index < jump->index && node->n < value; node = node->next)
 		printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
 

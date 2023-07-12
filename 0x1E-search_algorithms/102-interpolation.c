@@ -16,7 +16,7 @@
 int interpolation_search(int *array, size_t size, int value)
 {
 	size_t i, l, r;
-	
+
 	/* Check if the array is NULL */
 	if (array == NULL)
 		return (-1);
@@ -42,4 +42,4 @@ int interpolation_search(int *array, size_t size, int value)
 	}
 
 	return (-1);
-}	
+}

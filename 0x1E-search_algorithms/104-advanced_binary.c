@@ -32,12 +32,12 @@ int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
 	printf("%d\n", array[i]);
 	/* Calculate the middle index */
 	i = left + (right - left) / 2;
-	
+
 	/* If the middle element is the value and it's the first occurrence */
 	if (array[i] == value && (i == left || array[i - 1] != value))
 		/* Return the index */
 		return (i);
-	
+
 	/* If the middle element is greater than or equal to the value */
 	if (array[i] >= value)
 		/* Recursively search the left subarray */
@@ -58,7 +58,7 @@ int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
  */
 
 int advanced_binary(int *array, size_t size, int value)
-{	
+{
 	/* Check if the array is NULL or empty */
 	if (array == NULL || size == 0)
 		return (-1);
