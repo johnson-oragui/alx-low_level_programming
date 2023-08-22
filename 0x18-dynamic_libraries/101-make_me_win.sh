@@ -1,2 +1,3 @@
 #!/bin/bash
-LD_PRELOAD=/$PWD/libtest.so ./gm 9 8 10 24 75 -9
+gcc -shared -o myprintf.so -fPIC test.c
+export LD_PRELOAD=/alx-low_level_programming/0x18-dynamic_libraries/myprintf.so
