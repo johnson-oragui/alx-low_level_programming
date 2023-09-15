@@ -1,30 +1,23 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (success)
- */
-
 int main(void)
 {
-	int i;
+    int digit;
 
-	for (i = 0 ; i < 100 ; i++)
-	{
-		putchar(i);
-	if (i < 10)
-	{
-		putchar(i + '0');
-	}
-	if (i < 89)
-	{
-		putchar(',');
-		putchar(' ');
-	}
+    for (digit = 0; digit < 10; digit++)
+    {
+        putchar(digit + '0');
 
-	}
+        if (digit < 9)
+        {
+            putchar(',');
 
-		putchar('\n');
-	return (0);
+            putchar(' ');
+        }
+    }
+
+    putchar('\n');
+
+    return (0);
 }
+
